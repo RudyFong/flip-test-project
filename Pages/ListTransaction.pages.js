@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, {useState, useEffect} from 'react';
 import {ActivityIndicator, Image, Text, View, Modal, TextInput, ScrollView, TouchableOpacity} from 'react-native';
 import {formatAmount, dateFormatter, checkSearchFunction} from '../Utils/Transformer.utils';

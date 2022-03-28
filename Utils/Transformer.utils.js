@@ -2,7 +2,7 @@
 export const formatAmount = (valueRaw) => {
   const value = Math.floor(valueRaw);
   const amount = (!value && parseInt(value) !== 0) ? '' :
-        value.toString().replace(/([,.])+/g, '');
+    value.toString().replace(/([,.])+/g, '');
   const expectedSeparator = Math.floor(amount.length / 3);
   const separator = '.';
   const separatorAmount = (amount.split(separator).length - 1);
@@ -21,7 +21,6 @@ export const formatAmount = (valueRaw) => {
 export const dateFormatter = (value) => {
   const t = value.split(/[- :]/);
   const getActualMonth = t[1] - 1;
-  const d = new Date(t[0], t[1] - 1, t[2], t[3], t[4], t[5]);
   let nameOfMonth = '';
   switch (getActualMonth) {
   case 0:
